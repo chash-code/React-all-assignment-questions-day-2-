@@ -2,24 +2,30 @@ import React from 'react';
 import Counter from './Counter';
 import Calculator from './Calculator';
 import MessageCard from './MessageCard';
+import UserProfile from './UserProfile';
 
 function App() {
   return (
-    <div>
-      <h1 style={{ textAlign: 'center' }}>React Assignment</h1>
+    <div style={{ fontFamily: 'Arial, sans-serif' }}>
+      <h1 style={{ textAlign: 'center', backgroundColor: '#4CAF50', color: 'white', padding: '20px', margin: '0' }}>
+        React Assignment - All Questions
+      </h1>
       
-      <div style={{ border: '2px solid #ccc', margin: '20px', padding: '20px' }}>
-        <h2>Q1: Counter</h2>
+      {/* Q1: Counter */}
+      <div style={{ border: '3px solid #4CAF50', margin: '20px', padding: '20px', borderRadius: '8px' }}>
+        <h2 style={{ color: '#4CAF50' }}>Q1: Counter Using useState</h2>
         <Counter />
       </div>
       
-      <div style={{ border: '2px solid #ccc', margin: '20px', padding: '20px' }}>
-        <h2>Q2: Calculator</h2>
+      {/* Q2: Calculator */}
+      <div style={{ border: '3px solid #2196F3', margin: '20px', padding: '20px', borderRadius: '8px' }}>
+        <h2 style={{ color: '#2196F3' }}>Q2: Basic Calculator Component</h2>
         <Calculator />
       </div>
       
-      <div style={{ border: '2px solid #ccc', margin: '20px', padding: '20px' }}>
-        <h2>Q3: Message Cards</h2>
+      {/* Q3: Message Cards */}
+      <div style={{ border: '3px solid #FF9800', margin: '20px', padding: '20px', borderRadius: '8px' }}>
+        <h2 style={{ color: '#FF9800' }}>Q3: Reusable Component with Props</h2>
         <MessageCard 
           title="Welcome!" 
           message="This is the first message card." 
@@ -37,7 +43,14 @@ function App() {
           message="This component can be used multiple times!" 
         />
       </div>
+      
+      {/* Q4: Parent-Child Components */}
+      <div style={{ border: '3px solid #9C27B0', margin: '20px', padding: '20px', borderRadius: '8px' }}>
+        <h2 style={{ color: '#9C27B0' }}>Q4: Parent-Child Components</h2>
+        <UserProfile />
+      </div>
     </div>
   );
 }
 
+export default App;
